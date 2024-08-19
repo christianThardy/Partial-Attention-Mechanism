@@ -1,6 +1,6 @@
 # Partial Attention Large Language Model
 
-This implementation of **PALM** takes the strong foundation of decoder-only models and enhances them with the ability to focus on what's important, remember context, and maintain coherent, on-topic conversations.
+This implementation of **PALM** takes the strong foundation of decoder-only models and enhances them with the ability to better focus on what's important, remember context, and maintaining coherent, on-topic conversations.
 
 It's essentially taking the best thing about encoder-decoder models (bidirectionality to capture rich contextual representations) and baking them directly into a decoder-only model via a partial attention mechanism 
 that alleviates attention degeneration, a bidirectional attention mask, a separate positional encoding and a specialized language embedding to help the model differentiate between source (prompt) and target 
