@@ -1,6 +1,5 @@
 import torch
 
-
 def collate_fn(batch):
     # Initialize dictionaries to store the batched data
     batched_data = {
