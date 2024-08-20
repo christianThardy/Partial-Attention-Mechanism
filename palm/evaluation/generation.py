@@ -1,7 +1,7 @@
 import torch
 
-
 device = torch.device("cpu") # Set to CPU, adjust as needed
+
 
 def generate_text(model, tokenizer, prompt, max_length=500, temperature=0.7, top_p=0.9, model_type=None):
     try:
