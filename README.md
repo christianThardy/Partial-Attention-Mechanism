@@ -6,7 +6,7 @@ It's essentially taking the best thing about encoder-decoder models (bidirection
 that alleviates attention degeneration, a bidirectional attention mask, a separate positional encoding and a specialized language embedding to help the model differentiate between source (prompt) and target 
 (generated output) text parts/sequences. PALM allows:
 
-  - **More Coherent Responses for Nuanced Tasks:**
+  - **More Coherent Responses for Nuanced, Long-form Tasks:**
     - By always keeping the main topic in focus, PALM generates responses that stay more relevant to the original question or prompt.
       
   - **Reduced "Forgetting":**
