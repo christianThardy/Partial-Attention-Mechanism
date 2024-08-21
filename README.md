@@ -16,7 +16,7 @@ This is made possible through a partial attention mechanism. This mechanism sele
   - **Improved Long-Form Generation:**
     - For tasks that require longer outputs, like storytelling, detailed factual explanations or dialogue, PALM helps maintain consistency and relevance throughout.
 
-<br>
+
 
 ### Reference:
 
