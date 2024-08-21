@@ -1,6 +1,6 @@
 # Partial Attention Large Language Model
 
-This ongoing implementation of **PALM** is a wrapper on top of HuggingFace models to take the strong foundation of decoder-only models and enhance them to use bidirectionality to capture rich contextual representations (like an encoder-decoder model). 
+This ongoing implementation of **PALM** is a wrapper on top of HuggingFace models to take the strong foundation of decoder-only models and enhance them to use bidirectionality to capture rich contextual representations, like encoder-decoder models. 
 
 This is made possible through a partial attention mechanism. This mechanism selectively attends to different segments of the source (input text) rather than applying a uniform attention across the entire sequence. It decreases the effects of attention degeneration as seen in the hallucination problem via a bidirectional attention mask, a separate positional encoding and a specialized language embedding to help the model differentiate between source (prompt) and target (generated output) text sequences. PALM allows:
 
