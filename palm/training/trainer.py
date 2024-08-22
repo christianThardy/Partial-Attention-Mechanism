@@ -26,7 +26,7 @@ class PALMTrainer:
         self.model.to(self.device) # Move model to the selected device
         
         # Initialize optimizer with AdamW, including learning rate and weight decay
-        self.optimizer = AdamW(model.parameters(), lr=config.learning_rate, weight_decay=0.05)
+        self.optimizer = AdamW(model.parameters(), lr=config.learning_rate, weight_decay=0.09)
         
         # Set up learning rate scheduler with a linear warm-up and total training steps
         self.scheduler = get_linear_schedule_with_warmup(
