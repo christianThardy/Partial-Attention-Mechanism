@@ -90,7 +90,7 @@ class PALMTrainer:
                 
                 # Update model parameters if the step is at the accumulation point or the last step
                 if (step + 1) % self.config.gradient_accumulation_steps == 0 or step == len(self.train_dataloader) - 1:
-                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0) # Clip gradients to avoid exploding gradients
+                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=0.5) # Clip gradients to avoid exploding gradients
                     self.optimizer.step() # Update the model parameters
                     self.scheduler.step() # Update the learning rate
                     self.optimizer.zero_grad() # Zero the gradients for the next step
