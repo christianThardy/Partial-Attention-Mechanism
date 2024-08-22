@@ -4,7 +4,7 @@ This ongoing implementation of **PALM** is a wrapper on top of HuggingFace model
 
 This is made possible through a partial attention mechanism. This mechanism selectively attends to different segments of the source (input text) rather than applying a uniform attention across the entire sequence. It decreases the effects of attention degeneration as seen in the hallucination problem via a bidirectional attention mask, a separate positional encoding and a specialized language embedding to help the model differentiate between source (prompt) and target (generated output) text sequences. PALM allows:
 
-  - **Reliable Coherent Responses for Nuanced, Long-form Tasks:**
+  - **Reliable Coherent Responses for Nuanced, Long-Form Tasks:**
     - By always keeping the main topic in focus, PALM generates responses that stay more relevant to the original prompt.
       
   - **Reduced "Forgetting":**
